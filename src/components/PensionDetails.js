@@ -119,7 +119,7 @@ event.preventDefault();
             <br></br>
             <div className="container">
 
-                <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                 <p><h3>Display Pension Details</h3></p>
 
                     <form className="form form-group form-primary" onSubmit={submitDisplayPension }>
@@ -159,7 +159,7 @@ event.preventDefault();
             <br></br>
             <div className="container">
 
-                <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                 <p><h3>Delete Pension Details</h3></p>
 
                     <form className="form form-group form-primary" onSubmit={submitDeletePension }>
@@ -173,7 +173,7 @@ event.preventDefault();
 
                 <p>-----------------------------------------------------------------------------------------------------</p>
                 <div className="container-fluid">
-                    <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                    <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                         <p><h3>Add Pension Details</h3></p>
 
                      <input className="form-control mt-3" type="text" id="pensioner_id" name="pensioner_id" value={newPensionObj.setPensioner_id} onChange={handleAddPension} placeholder="Enter Pensioner_id" />
@@ -193,7 +193,7 @@ event.preventDefault();
      
         <p>--------------------------------------------------</p>
 <div className="container">
-                     <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                     <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                          <p><h3>Update Pension Details</h3></p>
 
                          <input className="form-control mt-3" type="number" id="pensioner_id" name="pensioner_id" value={updatePensionDetails.pensioner_id} onChange={handleUpdatePension} placeholder="Enter Pensioner_id"/>

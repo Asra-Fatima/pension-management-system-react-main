@@ -142,7 +142,7 @@ import axios from 'axios';
             <br></br>
             <div className="container">
 
-                <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                     <p>Remove Pensioner Details</p>
                     <form className="form form-group form-primary" onSubmit={submitDeletePensioner }>
                         <input className="form-control mt-4" type="number" id="pensioner_id" name="pensioner_id" value={pensioner_id} onChange={handlePensioner} placeholder="Enter Pensioner Id to delete the details" />
@@ -155,7 +155,7 @@ import axios from 'axios';
 
                 <p>-----------------------------------------------------------------------------------------------------</p>
                 <div className="container-fluid">
-                    <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                    <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                         <p>Add Pensioner Details</p>
 
                         <input className="form-control mt-3" type="text" id="pensioner_id" name="pensioner_id" value={newPensionerObj.setPensioner_id} onChange={handleAddPensioner} placeholder="Enter Pensioner_id"/>
@@ -202,7 +202,7 @@ import axios from 'axios';
 
 <div>
             <p>Find all Pensioner Details</p>
-            <div className="col-5 border border-light shadow p-3 mb-5 bg-white">
+            <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
 
 
                 <div>
@@ -243,7 +243,7 @@ import axios from 'axios';
 
 <p>--------------------------------------------------</p>
 <div className="container">
-                     <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                     <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                          <p>Update Pensioner Details</p>
 
                          <input className="form-control mt-3" type="text" id="pensioner_id" name="pensioner_id" value={updatePensionerDetails.pensioner_id} onChange={handleUpdatePensioner} placeholder="Enter Pensioner_id"/>

@@ -104,7 +104,7 @@ import axios from 'axios';
     <h1 className="display-5 text-warning mt-5 mb-5" >Bank Component</h1>
    
     <div className="container">
-    <div className="col-5 border border-light shadow p-3 mb-5 bg-white">
+    <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                         <p>Add Bank Account</p>
                         
 
