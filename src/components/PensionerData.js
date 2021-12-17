@@ -51,16 +51,7 @@ import axios from 'axios';
             
         
 
-    // const submitGetBankById = (evt) => {
-    //     evt.preventDefault();
-    //     console.log('submitGetBankById');
-    //     getBankByIdService(accno)
-    //         .then((response) => { dispatch(getBankById(response.data)) })
-    //         .catch(() => {
-    //             alert(`Bank with accno: ${accno} not found.`);
-    //         });
-    //     setAccno('');
-    // }
+    
     const submitDeletePensioner = (evt) => {
         evt.preventDefault();
         console.log('submitDeletePensioner');
@@ -103,40 +94,7 @@ import axios from 'axios';
     <div className="container-fluid">
     <h1 className="display-5 text-warning mt-3 mb-3" >Pensioner Details Component</h1>
     
-    {/* <div className="container">
-                    {<div className="col-4 border border-light shadow p-3 mb-5 bg-white">
-                        
-                <table className="table table-light table-striped ">
-                    <thead>
-                        <tr>
-                            <th>Pensioner_id</th>
-                            <th>Age</th>
-                            <th>Aadhar</th>
-                            <th>Pan</th>
-                            <th>Salary</th>
-                            <th>Acc_No</th>
-                            <th>PensionType</th>
-                            
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>{pensionerDataFromStore.pensioner_id}</td>
-                            <td>{pensionerDataFromStore.age}</td>
-                            <td>{pensionerDataFromStore.aadhar}</td>
-                            <td>{pensionerDataFromStore.pan}</td>
-                            <td>{pensionerDataFromStore.salary}</td>
-                            <td>{pensionerDataFromStore.acc_No}</td>
-                            <td>{pensionerDataFromStore.pensionType}</td>
-                            
-                            
-
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div> } */}
+    
 
             
             <br></br>
@@ -166,34 +124,7 @@ import axios from 'axios';
                         <input className="form-control mt-3" type="number" id="acc_no" name="acc_No" value={newPensionerObj.acc_No} onChange={handleAddPensioner} placeholder="Enter Account number"/>
                         <input className="form-control mt-3" type="text" id="pensionType" name="pensionType" value={newPensionerObj.pensionType} onChange={handleAddPensioner} placeholder="Enter PensionType"/>
                         <input className="form-control mt-3 btn btn-primary" type="submit" value="Add Pensioner" onClick={addPensioner} />
-                        {/* <table className="table table-light table-striped ">
-                            <thead>
-                                <tr>
-                                <th>Pensioner_id</th>    
-                                <th>Age</th>
-                                <th>Aadhar</th>
-                                <th>Pan</th>
-                                <th>Salary</th>
-                                <th>Acc_no</th>
-                                <th>PensionType</th>
-                                
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{displayPensionerObj.pensioner_id}</td>
-                                    <td>{displayPensionerObj.age}</td>
-                                    <td>{displayPensionerObj.pan}</td>
-                                    <td>{displayPensionerObj.aadhar}</td>
-                                    <td>{displayPensionerObj.salary}</td>
-                                    <td>{displayPensionerObj.acc_No}</td>
-                                    <td>{displayPensionerObj.pensionType}</td>
-                                    
-                                    
-                                </tr>
-                            </tbody>
-                        </table> */}
+                        
                     </div>
 
                 </div>
@@ -295,45 +226,3 @@ export default PensionerData;
 
 
 
-// import React from 'react'
-// import { getAllPensionerService, addPensionerService, updatePensionerService, deletePensionerService } from "./services/PensionerService";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useState } from "react";
-// import { getallPensioner, addPensioner, updatePensioner, deletePensioner } from '../redux/PensionerSlice';
-// import axios from 'axios';
-// import Pensioner from './models/pensioner';
-// import PensionerSlice from '../redux/PensionerSlice';
- 
-
-
-// const PensionerData = props => {
-//     const [displyUpdatePensioner, setDisplyUpdatePensioner] = useState('');
-//     const [updatePensionerDetails, setUpdatePensionerDetails] = useState({pensioner_id:'', age: '', aadhar: '', pan:'', salary:'', acc_No:'', pensionType:''});
-
-
-
-//     const handleUpdatePensioner = (e) => {
-//                 console.log(e.target.value);
-//                 setUpdatePensionerDetails({
-//                     ...updatePensionerDetails,
-//                     [e.target.name]: e.target.value
-//                 });
-//             }
-
-//     const updatePensioner = (event) => {
-//         axios.put(`/updatepensioner`,updatePensionerDetails)
-//             .then((response) => {
-//                 alert('Updated')
-//                 console.log(response.data);
-//             }).catch(() => {
-//                 alert("Not updated")
-//                 console.log('Error')
-//             });
-//         event.preventDefault();
-//     }
-
-    
-
-
-
-//     return (
