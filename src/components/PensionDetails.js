@@ -109,13 +109,12 @@ event.preventDefault();
 
   return (
     <div className="container-fluid">
-    <h1 className="display-4 text-warning mt-3 mb-3" >Pension Details Component</h1>
+    <h1 className="display-5 text-warning mt-3 mb-3" >Pension Details Component</h1>
  
-    <p>Fetch data from backend, store it in redux store and get it to component</p>
    
                             
                        
-             <p>----------------------------------</p>
+             
             <br></br>
             <div className="container">
 
@@ -155,7 +154,7 @@ event.preventDefault();
                 </div>
              
 
-            <p>----------------------------------</p>
+            
             <br></br>
             <div className="container">
 
@@ -171,10 +170,10 @@ event.preventDefault();
                 </div>
              
 
-                <p>-----------------------------------------------------------------------------------------------------</p>
+                
                 <div className="container-fluid">
                     <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
-                        <p><h3>Add Pension Details</h3></p>
+                    <p><h3>Add Pension Details</h3></p>
 
                      <input className="form-control mt-3" type="text" id="pensioner_id" name="pensioner_id" value={newPensionObj.setPensioner_id} onChange={handleAddPension} placeholder="Enter Pensioner_id" />
                      <input className="form-control mt-3" type="number" id="amount" name="amount" value={newPensionObj.amount} onChange={handleAddPension} placeholder="Enter amount" />
@@ -191,7 +190,7 @@ event.preventDefault();
 
         </div>
      
-        <p>--------------------------------------------------</p>
+        
 <div className="container">
                      <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                          <p><h3>Update Pension Details</h3></p>

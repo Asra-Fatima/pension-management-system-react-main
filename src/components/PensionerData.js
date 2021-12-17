@@ -101,8 +101,8 @@ import axios from 'axios';
         
   return (
     <div className="container-fluid">
-    <h1 className="display-4 text-warning mt-3 mb-3" >Pensioner Details Component</h1>
-    <p>Fetch data from backend, store it in redux store and get it to component</p>
+    <h1 className="display-5 text-warning mt-3 mb-3" >Pensioner Details Component</h1>
+    
     {/* <div className="container">
                     {<div className="col-4 border border-light shadow p-3 mb-5 bg-white">
                         
@@ -138,7 +138,7 @@ import axios from 'axios';
                 </table>
             </div> } */}
 
-            <p>--------------------</p>
+            
             <br></br>
             <div className="container">
 
@@ -153,7 +153,7 @@ import axios from 'axios';
                 </div>
              
 
-                <p>-----------------------------------------------------------------------------------------------------</p>
+                
                 <div className="container-fluid">
                     <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                         <p>Add Pensioner Details</p>
@@ -198,11 +198,11 @@ import axios from 'axios';
 
                 </div>
 
-<p>-------------------------------------------------</p>
+
 
 <div>
-            <p>Find all Pensioner Details</p>
-            <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
+            
+            <div className="col-7 border border-light shadow p-3 mb-5 bg-white">
 
 
                 <div>
@@ -241,7 +241,6 @@ import axios from 'axios';
     
 
 
-<p>--------------------------------------------------</p>
 <div className="container">
                      <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                          <p>Update Pensioner Details</p>

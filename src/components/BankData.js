@@ -101,7 +101,7 @@ import axios from 'axios';
 
   return (
     <div className="container">
-    <h1 className="display-5 text-warning mt-5 mb-5" >Bank Component</h1>
+    <h1 className="display-5 text-warning mt-5 mb-5" >Bank Details Component</h1>
    
     <div className="container">
     <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
@@ -142,9 +142,9 @@ import axios from 'axios';
 
 
                 
-                    <p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                    
 
-            <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+            <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                 <p>Search Bank Account</p>
                 <form className="form form-group form-primary" onSubmit={submitGetBankById}>
                     <input className="form-control mt-3" type="number" id="accno" name="accno" value={accno} onChange={handleBank} placeholder="Enter accno to search" />
@@ -175,11 +175,11 @@ import axios from 'axios';
                 </table>
             </div>
 
-            <p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            
             <br></br>
             <div className="container">
 
-                <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                     <p>Remove Bank Account</p>
                     <form className="form form-group form-primary" onSubmit={submitDeleteBankById}>
                         <input className="form-control mt-4" type="number" id="accno" name="accno" value={accno} onChange={handleBank} placeholder="Enter accno to Delete" />
@@ -195,9 +195,9 @@ import axios from 'axios';
                
 
 
-<p>----------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
                 <div className="container">
-                    <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
+                    <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                         <p>update Bank Account</p>
 
                         <input className="form-control mt-3" type="text" id="accno" name="accno" value={updateBank.accno} onChange={handleUpdateBank} placeholder="Enter accno to" />
